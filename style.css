@@ -1,0 +1,113 @@
+body {
+    background-color: #FAF8EF;
+    font-family: 'Century Gothic', 'Franklin Gothic', Arial, sans-serif;
+    color: #776E65;
+}
+
+.container {
+    margin: 0 auto;
+    width: 65vh;
+    height: auto;
+    background-color: #FAF8EF;
+    border: 1px solid #776E65;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18pt;
+}
+
+.result {
+    background-color: #ffffff;
+    border: 1px solid #776E65;
+    border-radius: 10px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.result input {
+    text-align: right;
+    border: none;
+    color: #776E65;
+    width: 95%;
+}
+
+.result input#history {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 15pt;
+}
+
+.result input#result {
+    font-size: 20pt;
+}
+
+.option {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.clear, .delete, .percent, .power, .divide, .multiple, .minus, .plus, .total, .coma, .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+    border: 1px solid #776E65;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    font-family: 'Century Gothic', Arial, sans-serif;
+}
+
+.clear:hover, .delete:hover, .percent:hover, .power:hover, .divide:hover, .multiple:hover, .minus:hover, .plus:hover, .total:hover, .coma:hover, .zero:hover, .one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover, .nine:hover {
+    opacity: 75%;
+}
+
+.clear, .delete {
+    background-color: #F75F3B;
+    color: #FFFFFF;
+}
+
+.percent {
+    background-color: #EDD073;
+    grid-column-start: 3;
+}
+
+.power, .divide {
+    background-color: #598FC2;
+    color: #FFFFFF;
+}
+
+.multiple, .minus, .plus {
+    background-color: #598FC2;
+    color: #FFFFFF;
+    grid-column: 4 / 6;
+}
+
+.seven, .eight, .nine, .multiple {
+    grid-row-start: 2;
+}
+
+.four, .five, .six, .minus {
+    grid-row-start: 3;
+}
+
+.one, .two, .three, .plus {
+    grid-row-start: 4;
+}
+
+.zero, .coma, .total {
+    grid-row-start: 5;
+}
+
+.total {
+    grid-column: 3 / 6;
+    background-color: #F3B27A;
+    color: #FFFFFF;
+}
+
+.coma, .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine {
+    background-color: #EEE4DA;
+}
